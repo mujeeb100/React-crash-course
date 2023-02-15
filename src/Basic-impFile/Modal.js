@@ -6,7 +6,7 @@ function Modal(props) {
     props.onConfirm();
   }
 
-  return (
+  return (npm 
     <div className="modal">
       <p>Are you sure ??</p>
       <button onClick={cancelHandler} className="btn btn-alt">
