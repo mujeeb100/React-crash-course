@@ -1,11 +1,13 @@
-import React from 'react'
+import React from "react";
+import NewMeetupForum from "../components/meetups/NewMeetupForum";
 
 function NewMeetup() {
   return (
-    <div>
-      New Meetup i am here to meet up with you
-    </div>
-  )
+    <section>
+      <h1>Add new Meetup</h1>
+      <NewMeetupForum />
+    </section>
+  );
 }
 
-export default NewMeetup
+export default NewMeetup;
