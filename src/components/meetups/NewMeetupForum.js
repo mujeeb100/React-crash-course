@@ -2,7 +2,7 @@ import React, { useRef } from "react";
 import Card from "../ui/Card";
 import classes from "./NewMeetupForm.module.css";
 
-function NewMeetupForum() {
+function NewMeetupForum(props) {
   // refs directly access to the DOM element
   // reading what the user enter
   const titleInputRef = useRef();
@@ -25,7 +25,8 @@ function NewMeetupForum() {
       address: enteredAddress,
       description: enteredDescription,
     };
-    console.log(meetupData);
+    // console.log(meetupData);
+    props.onAddMeetUp(meetupData);
   }
   return (
     <Card>
